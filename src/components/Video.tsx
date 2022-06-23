@@ -20,11 +20,13 @@ export function Video() {
 					</div>
 
 					<div className="flex flex-col gap-4">
-						<Button type="discord">
-							Comunidade do Discord
+						<Button href="/" type="discord">
+								<DiscordLogo size={24} />
+								Comunidade do Discord
 						</Button>
 
-						<Button type="fast">
+						<Button href="/" type="fast">
+							<Lightning size={24} />
 							Acesse o desafio
 						</Button>
 					</div>
