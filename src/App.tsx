@@ -1,4 +1,4 @@
-import { Router } from "./components/Router"
+import { Router } from "./Router"
 import { Event } from "./pages/Event"
 import { ApolloProvider } from '@apollo/client'
 import { client } from './lib/apollo'

@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 
 interface LessonProps {
 	title: string,
-	slug: string,
+	slug?: string | null,
 	availableAt: Date,
 	type: 'live' | 'class'
 }
