@@ -3,11 +3,10 @@ import { DiscordLogo, Lightning, FileArrowDown, CaretRight } from "phosphor-reac
 import { Button } from "./Button"
 
 import '@vime/core/themes/default.css'
-import { gql, useQuery } from "@apollo/client";
 import { useGetLessonBySlugQuery } from "../graphql/generated";
 
 interface slugParams {
-	lessonSlug: string
+	lessonSlug: string | undefined
 }
 
 export function Video(props: slugParams) {
@@ -19,9 +18,7 @@ export function Video(props: slugParams) {
 
 	if (!data || !data.lesson) {
 		return (
-			<div className="flex-1">
-				<p>Carregando...</p>
-			</div>
+			<div className="flex-1" />
 		)
 	}
 	
