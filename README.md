@@ -26,7 +26,7 @@ Essa aplicação consiste em uma plataforma de vídeo aulas em que é possível 
   </p>
 </div>
 
-### 🚀 Tecnologias
+# 🚀 Tecnologias
 
 - React.js
 - Typescript
